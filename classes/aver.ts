@@ -1,4 +1,4 @@
-export class ente{
+export class Ente{
     private nombre:string;
     private nacimiento:number;
 
