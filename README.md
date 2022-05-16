@@ -1,0 +1,6 @@
+Tuve una pelea con el navegador y typescript para que pueda exportar e importar valores y funciones. Terminé modificando código en los .js a pesar de que esté aprendiendo typecript pero es porque el compilador no usa la sintaxis correcta.
+
+En resumen quise correr el código recreado de la clase para experimentar cosas nuevas pero encontré mil y un problemas derivados de que el "npx tsc" hace que el código que está en .js use una funciones que sólo funcionan en node (lo que se instaló al inicio del curso) y no en navegadores. Para solventar esto tuve que pasar por un problema nuevo en cada ocasión.
+El primer error era que el "exports" no estaba definido, luego me tiró la bomba de que "require" no estaba definido. Buscando encontré que cambiando el "target" de tsconfig.json a ES6 podría usar una sintaxis compatible pero luego me salieron errores relacionados a usar más de un script que aparentemente se soluciona con una extensión para correr el código como si el navegador fuera un servidor local (Instalé Live Server) por lo que luego de reescribir la sintaxis todo funciona joya.
+
+El único problema que queda es que si vuelven a compilar el código como siempre se les sobreescribirá la sintaxis buena con la rota. Acá no tengo idea, será mejor encontrar una solución para poder seguir usando typescript sin que resulte una molestia al compilar.

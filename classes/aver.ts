@@ -15,7 +15,7 @@ export class Ente{
         let añoActual = new Date();
         let añoUsable:number = añoActual.getFullYear()
         const edad = añoUsable - this.nacimiento;
-        return "Tengo "+edad+"años";
+        return "Tengo "+edad+" años";
     }
 
     public estoyViejo(){;
