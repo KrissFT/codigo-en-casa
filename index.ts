@@ -1,4 +1,4 @@
-import { Ente } from "./classes/Aver";
+import { Ente } from "./classes/aver";
 
 const alguien = new Ente(2001, "Lukas Santillán");
 console.log(alguien.estoyViejo());
